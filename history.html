@@ -1,0 +1,42 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrack | Application History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h1>JobTrack</h1>
+        <a href="index.html">Dashboard</a>
+        <a href="application.html">Applications</a>
+        <a href="history.html" class="active">Application History</a>
+        <a href="search.html">Search</a>
+    </aside>
+
+    <main>
+        <section id="history" class="section">
+            <h2 class="table-heading">Application History</h2>
+
+            <table id="applicationTableBody">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Job Title</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="applicationList">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrack | Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <aside class="sidebar">
+    <h1>JobTrack</h1>
+        <a href="index.html">Dashboard</a>
+        <a href="application.html">Applications</a>
+         <a href="history.html">Application History</a>
+          <a href="search.html">Search</a>
+</aside>
+<main>
+<section id="applications" class="section">
+             <h2>My Applications</h2>
+             <div class="application-layout">
+    <form id="applicationForm" action="">
+        <h3>Add New Application</h3>
+        <label for="cname">Company Name </label><input type="text" id="cname" placeholder="Eg: Google" required>
+        <label for="jobtitle">Job Title </label><input type="text" id="jobtitle" placeholder="Eg: Frontend Developer" required> 
+        <label for="location">Location </label><input type="text" id="location" placeholder="Eg: Pune" required> 
+        <label for="date">Date </label><input type="date" id="date" required> 
+      <label for="status"> Status </label>
+        <select id="status"> 
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Rejected">Rejected</option>
+        <option value="Offer">Offer</option>
+    </select>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="checklist-container">
+    <h3>Application Checklist</h3>
+    <p>
+Keep track of your follow-ups and stay organized throughout your job search.</p>
+    <div class="checklist">
+        <label><input type="checkbox"> Resume updated</label>
+        <label><input type="checkbox"> Cover letter ready</label>
+        <label><input type="checkbox"> Details checked</label>
+        <label><input type="checkbox"> Follow-up planned</label>
+    </div>
+</div>
+    </section>
+    <section id="history" class="section">
+<h2 class="table-heading">Recently Added Applications</h2>
+    <table id="applicationTableBody">
+        <thead>
+      <tr>
+        <th>Company</th>
+        <th>Job Title</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="applicationList">
+    </tbody>
+    </table> <br><br>
+    </section>
+</main>
+        <script src="script.js"></script>
+</body>
+</html>

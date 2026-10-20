@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <aside class="sidebar">
+    <h1>JobTrack</h1>
+        <a href="index.html">Dashboard</a>
+        <a href="application.html">Applications</a>
+         <a href="history.html">Application History</a>
+          <a href="search.html">Search</a>
+</aside>
+   <main>
+    <section id="dashboard">
+        <div class="dashboard-top">
+        <div class="dashboard_header">
+    <h2>Dashboard</h2>
+    <p>Track your job applications, monitor your progress, and stay organized throughout your job search.</p>
+</div>
+    <div class="stats">
+<div class="box">
+    <div class="card_inner">
+        <div class="card_front">
+    <img class="stat_icon" src="application.png" alt="Application">
+    <h2>Total Applications </h2>
+        </div>
+    <div class="card_back">
+        <p id="totalCount">0</p>
+    </div>
+    </div>
+</div>
+    <div class="box ">
+        <div class="card_inner">
+            <div class="card_front">
+        <img class="stat_icon" src="applied.png" alt="Applied">
+        <h2>Applied</h2>
+            </div>
+        <div class="card_back">
+        <p id="appliedCount">0</p>
+        </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="card_inner">
+            <div class="card_front">
+        <img class="stat_icon" src="interview.png" alt="Interviews">
+     <h2>Interviews</h2>
+            </div>
+            <div class="card_back">
+     <p id="interviewCount">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="card_inner">
+            <div class="card_front">
+        <img class="stat_icon" src="Rejected.png" alt="Rejected">
+        <h2>Rejected</h2>
+            </div>
+            <div class="card_back">
+        <p id="rejectedCount">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="card_inner">
+            <div class="card_front">
+        <img class="stat_icon" src="offers.png" alt="Offers">
+        <h2>Offers</h2>
+            </div>
+            <div class="card_back">
+        <p id="offerCount">0</p>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+<div class="dashboard-widgets">
+    <div class="dashboard-panel">
+        <h2>Application Status</h2>
+        <p class="panel-description">
+            Overview of your job search progress.
+        </p>
+
+        <div class="chart-container">
+            <canvas id="statusChart"></canvas>
+        </div>
+    </div>
+    <div class="dashboard-panel">
+        <div class="panel-header">
+            <h2>Recent Applications</h2>
+            <a href="history.html">View all</a>
+        </div>
+
+        <p class="panel-description">
+            Your five latest applications.
+        </p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Job Title</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="recentApplications"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="dashboard-panel history-panel">
+        <div class="panel-header">
+            <h2>Application History</h2>
+            <a href="history.html">View history</a>
+        </div>
+        <p class="panel-description">
+            Review your overall application records.
+        </p>
+        <div class="history-summary">
+            <div>
+                <span>Total records</span>
+                <strong id="historyTotal">0</strong>
+            </div>
+            <div>
+                <span>Interviews</span>
+                <strong id="historyInterviews">0</strong>
+            </div>
+            <div>
+                <span>Offers</span>
+                <strong id="historyOffers">0</strong>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </section>
+   <footer>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

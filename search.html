@@ -1,0 +1,62 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobTrack | Search Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h1>JobTrack</h1>
+        <a href="index.html">Dashboard</a>
+        <a href="application.html">Applications</a>
+        <a href="history.html">Application History</a>
+        <a href="search.html" class="active">Search</a>
+    </aside>
+
+    <main>
+        <section id="search" class="section">
+            <h2 class="control-heading">Search Applications</h2>
+
+            <div class="controls">
+                <input
+                    type="search"
+                    class="searchBox"
+                    placeholder="Search company"
+                    aria-label="Search by company"
+                >
+
+                <select id="statusFilter" aria-label="Filter by status">
+                    <option value="All">All Status</option>
+                    <option value="Applied">Applied</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Offer">Offer</option>
+                </select>
+
+                <button type="button" id="searchButton">Search</button>
+            </div>
+
+            <h2 class="table-heading">Search Results</h2>
+
+            <table id="searchTable">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Job Title</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="searchResults">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
